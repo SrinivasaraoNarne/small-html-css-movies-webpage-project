@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin: 50px 50px 0 50px;
   background-color: #faf9f6;
   display: flex;
@@ -9,7 +9,13 @@ body {
 .main {
   flex: 1;
 }
-
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
 h1 {
   font-size: 2rem;
 }
@@ -27,6 +33,7 @@ footer {
 
 .card {
   width: 45%;
+  margin: 10px;
 }
 
 .left {
@@ -44,10 +51,20 @@ footer {
 span{
   color: blue;
 }
+.head{
+  text-align: center;
+  font-size: 2rem;
+  
+}
 
 @media (max-width: 680px) {
   .logo {
-    width: 400px;
+    width: 350px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
   }
 
   h1 {
@@ -58,6 +75,7 @@ span{
   h2.head{
     font-size: 2rem;
     text-align: center;
+
   }
 
   .card {
